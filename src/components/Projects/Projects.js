@@ -6,6 +6,7 @@ import Particle from "../Particle";
 import scrappy from "../../Assets/Projects/scrappy.png";
 import todo from "../../Assets/Projects/todo.png";
 import eventify from "../../Assets/Projects/eventify.png";
+import bmw from "../../Assets/Projects/bmw.png";
 
 function Projects() {
   return (
@@ -51,6 +52,18 @@ function Projects() {
               title="Eventify"
               description="Platform to compare and book catering & photography services for events with an easy and modern interface."
               ghLink="https://github.com/Ankiitsuthar/Eventify"
+            />
+          </Col>
+
+          {/* BMW Experience */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bmw}
+              isBlog={false}
+              title="BMW Experience Website"
+              description="Cinematic, luxury-style car browsing experience with premium animations and BMW M stripe hover effects. Responsive design for multiple car model showcase."
+              ghLink="https://github.com/MannSolanki/BMW--showroom"
+              demoLink="https://bmw-motion.netlify.app"
             />
           </Col>
 
