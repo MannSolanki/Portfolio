@@ -4,9 +4,9 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
 import scrappy from "../../Assets/Projects/scrappy.png";
-import todo from "../../Assets/Projects/todo.png";
 import eventify from "../../Assets/Projects/eventify.png";
 import bmw from "../../Assets/Projects/bmw.png";
+import imagineAi from "../../Assets/Projects/ImagineAi.png";
 
 function Projects() {
   return (
@@ -33,16 +33,6 @@ function Projects() {
             />
           </Col>
 
-          {/* Todo List */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={todo}
-              isBlog={false}
-              title="Todo List App"
-              description="Simple task management app built with JavaScript/React. Users can add, delete and manage daily tasks easily."
-              ghLink="https://github.com/MannSolanki/WDF_Test"
-            />
-          </Col>
 
           {/* Eventify */}
           <Col md={4} className="project-card">
@@ -64,6 +54,20 @@ function Projects() {
               description="Cinematic, luxury-style car browsing experience with premium animations and BMW M stripe hover effects. Responsive design for multiple car model showcase."
               ghLink="https://github.com/MannSolanki/BMW--showroom"
               demoLink="https://bmw-motion.netlify.app"
+            />
+          </Col>
+
+          {/* Imagine AI */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={imagineAi}
+              isBlog={false}
+              title="Imagine AI"
+              description={
+                "AI-powered image-to-image generation platform that transforms uploaded images into creative AI-generated visuals using modern AI models and an interactive UI."
+              }
+              ghLink="https://github.com/MannSolanki/Imagine-AI"
+              demoLink="https://your-imagine-ai-demo.example.com"
             />
           </Col>
 
